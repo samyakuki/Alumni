@@ -59,7 +59,6 @@ const server = app.listen(port, () => {
 
 const io = socketIO(server);
 
-// Socket.IO events
 io.on('connection', (socket) => {
     // Handle connection
     socket.on('joinRoom', (roomId) => {
